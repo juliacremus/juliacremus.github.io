@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julia Remus - Website</title>
+</head>
+
+<style>
+    @font-face {
+        font-family: pathway;
+        src: url(fonts/PathwayExtreme_14pt-Light.ttf);
+        font-weight: normal
+    }
+
+    @font-face {
+        font-family: inconsolata;
+        src: url(fonts/Inconsolata_Condensed-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: pathwaybolder;
+        src: url(fonts/PathwayExtreme_14pt-Bold.ttf);
+        font-weight: bolder
+    }
+
+    * {
+        font-family: pathway !important
+    }
+
+    body {
+        background-color: #242d3b;
+        color: rgb(238, 238, 238)
+    }
+
+
+    h3 {
+        font-family: pathway !important;
+        color: #ecc4e8;
+        font-size: 18pt !important
+    }
+
+    span {
+        font-family: inconsolata !important;
+        text-align: center;
+        font-size: 10pt;
+        margin-top: 5px
+    }
+
+    a {
+        color: #90cffd
+    }
+
+    ul>li {
+        margin-bottom: 5px;
+    }
+
+    #side-contact-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1%;
+        margin-right: 5%;
+        padding-right: 25px;
+        border-right: solid 1px #4e5156;
+    }
+
+    #side-contact-bar>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    #contact-div {
+        display: flex;
+    }
+
+    #contact-div > div {
+        width: 33%;
+        text-align: center
+    }
+    
+    #contact-div > div > p {
+            font-size: 10pt !important;
+        }
+
+    #main-content > div > div {
+        width: 90%;
+        margin-left: 5px
+    }
+        
+    @media screen and (max-width: 800px) {
+        #contact-div > div > p {
+            font-size: 2vw !important;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        #side-contact-bar{
+            display: none;
+        }
+        #main-content{
+            margin-left: auto;
+            margin-right: auto;
+            width: 90% !important;
+        }
+        #contact-div{
+            font-size: 10pt
+        }
+    }
+</style>
+
+<body>
+
+    <div style="display: flex;">
+        <div id="side-contact-bar" style="margin-top: 50px">
+            <div>
+                <a href="https://www.linkedin.com/in/julia-remus-6140a5194/" target="_blank" style="color: white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg>
+                </a>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-mailbox"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z" />
+                    <path
+                        d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z" />
+                </svg>
+                <span>
+                    juliacremus@gmail.com
+                    <br>
+                    julia.remus@inf.ufrgs.br
+                </span>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg>
+                <span>
+                    (54) 9 9629-5051
+                </span>
+            </div>
+            <div>
+                <a href="https://github.com/juliacremus" target="_blank" style="color: white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+                </a>
+            </div>
+        </div>
+
+        <div id="main-content" style="width: 75%">
+            <div>
+                <h1
+                    style="font-family: inconsolata !important; color: #ffb9b9; text-shadow: 3px 3px #308762; font-size: 90pt;">
+                    Julia Corrêa Remus
+                </h1>
+            </div>
+
+            <div>
+
+                <h3>
+                    About me
+                </h3>
+
+                <div>
+                    Hello! I am a Master's student in Computer Science with a background in Physics Engineering, specializing on data analysis and machine learning. 
+                    At the moment, I'm employed as a junior data analyst, 
+                    where my primary responsibilities involve analyzing data from experimental tests and developing internal systems.
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div>
+
+                <h3>
+                    Academic Formations and Projects
+                </h3>
+
+                <div>
+                    <ul>
+                        <li style="font-size: 15pt;">
+                            Ongoing Master in Computational Science - UFRGS, 2023
+                        </li>
+                        <li>
+                            <p style="font-size: 15pt;">
+                                Physics Engineering - UFRGS, 2018 - 2023
+                            </p>
+                            <ul>
+                                <li>
+                                    Final Project:
+                                    <a href="https://lume.ufrgs.br/handle/10183/256569" target="_blank">
+                                        Using Convolutional Neural Networks for Classification of Anomalies in Metal
+                                        Wires from Magnetic Particle Inspection Images
+                                        <i>(Uso de redes neurais de convolução para classificação de anomalias em arames
+                                            metálicos a partir de imagens de inspeção por partícula magnética)</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    Enfitec Jr: applied physics research and development voluntary project
+                                </li>
+                                <li>
+                                    Scholarship holder at the nanoscale forming laboratory (LCN - UFRGS)
+                                </li>
+                                <li>
+                                    Student representation in the Physics Engineering Student Center (CEENF)
+                                </li>
+                            </ul>
+                        </li>
+                        <li style="font-size: 15pt;">
+                            Technical high school education in viticulture and enology - IFRS, 2015 - 2018
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div>
+
+                <h3>
+                    Professional Experiences
+                </h3>
+                <div>
+                    <ul>
+                        <li style="font-size: 15pt;">
+                            <a href="https://simeros.com/" target="_blank">
+                                SIMEROS
+                            </a>
+                        </li>
+
+                        <ul>
+                            <li>
+                                Junior Data Analyst, 2022 - now
+                            </li>
+                            <li>
+                                Engeneering Intern, 2021 - 2022
+                            </li>
+                            <li>
+                                Data Science Intern, 2020 - 2021
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div>
+
+                <h3>
+                    Skills
+                </h3>
+                <div>
+                    <ul>
+                        <li>
+                            <p style="font-size: 15pt;">
+                                Strong background in mathematics and physics    
+                            </p>
+                        </li>
+                        <li>
+                            <p style="font-size: 15pt;">
+                                Development
+                            </p>
+                            <ul>
+                                <li>
+                                    Python: pandas, numpy, scipy, matplotlib, Flask, tensorflow (3 years of experience)
+                                </li>
+                                <li>
+                                    Javascript (2 years of experience)
+                                </li>
+                                <li>
+                                    SQL - MySQL (3 years of experience)
+                                </li>
+                                <li>
+                                    git
+                                </li>
+                                <li>
+                                    Fullstack development and product management - Node JS
+                                </li>
+                                <li>
+                                    C - beginner
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p style="font-size: 15pt;">
+                                Languages
+                            </p>
+
+                            <ul>
+                                <li>
+                                    Portuguese - native
+                                </li>
+                                <li>
+                                    English - professional
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div>
+
+                <div>
+                    <h3>
+                        Contact Information
+                    </h3>
+
+                    <div id="contact-div">
+                        <div>
+                            <a href="https://www.linkedin.com/in/julia-remus-6140a5194/" target="_blank"
+                                style="color: white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                </svg></a>
+                            <br>
+                            <p>Linkedin</p>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-mailbox" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z" />
+                                <path
+                                    d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z" />
+                            </svg>
+                            <br>
+                            <p>
+                                juliacremus@gmail.com
+                                <br>
+                                julia.remus@inf.ufrgs.br
+                            </p>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg>
+                            <br>
+                            <p>(54) 9 9629-5051</p>
+                        </div>
+                        <div>
+                            <a href="https://github.com/juliacremus" target="_blank" style="color: white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                                </a>
+                        </div
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
